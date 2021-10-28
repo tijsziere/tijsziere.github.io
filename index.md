@@ -83,3 +83,24 @@ Then you have to select how you want to split up the cell, most often this is by
 <p align="center">
 <img src="https://raw.githubusercontent.com/tijsziere/tijsziere.github.io/main/images/04_DataCleaning/texttocolumns.gif">
 </p>
+
+## Deduplication in Excel
+There are mulitple ways to dedupe by using excel. For this part we will use conditional formatting on unique values (for example an ID Number, that is unique for every individual). If there are no unique we will create our own unique identifiers.
+
+### Conditional formatting (Hightlight Duplicates)
+You can use conditional formatting in combination with Hightlight Duplicates, to identify doubles in your dataset. You can access highligth duplicates in "Home" and then click "Conditional Formatting", select "Hightlight Cell Rules" and then select "Hightlight Duplicates".
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/tijsziere/tijsziere.github.io/main/images/04_DataCleaning/ConFormat.gif">
+</p>
+
+### Create own unique identifiers
+If your dataset does not include a unique identifier, you can try to create one yourself. You do this by combining different cells into one unique value. For example you can combine "firstname", "lastname", "village" and "date of birth". The chance of somebody with the same name, that lives in the same village and has the same data of birth is very small. You can also combine this with the text functions for even better results.
+
+You can do this with the concatenate function:
+=CONCAT(text1, text2, text3, ...)
+or
+=text1&text2&text3&...
+
+Then you can use hightligt duplicates to identify the duplicates. 
+

@@ -129,7 +129,7 @@ col_index_num : column number
 [range_lookup] : FALSE 
 ```
 
-In the example below, we retrieve the last name of a person in another table.
+In the example below, we retrieve the last name of a person in another table. It uses the the third column (whitch is the last name), therefore it uses the value `3` in the formula.
 
 ![vlookup1](https://d33wubrfki0l68.cloudfront.net/91f031c2f47c5ee8f7ee98831ea51ef8f5de3a1f/733fc/tuto/v/5.gif)
 

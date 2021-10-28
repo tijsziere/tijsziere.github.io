@@ -54,3 +54,32 @@ Find and replace is useful when you are changing large parts of your datasets. I
 <p align="center">
 <img src="https://raw.githubusercontent.com/tijsziere/tijsziere.github.io/main/images/04_DataCleaning/Replace.gif">
 </p>
+
+### Clear formatting
+When you are done with your analysis, or you have other reasons to clear all your formatting, you can do so by going to "Home", click the eraser button and then select "Clear formatting".
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/tijsziere/tijsziere.github.io/main/images/04_DataCleaning/ClearFormats.gif">
+</p>
+
+## Text functions (formulas) in Excel
+
+Text functions are usefull to make sure all text is formatted in the same way. This helps with gettting a clear overview of the data, but also with automatic deduplication.
+
+There are multiple text options that we will use:
+- **=TRIM(cell)**: Remove spaces from a text string except those between words: =TRIM()
+- **=PROPER(cell)**: First letter of each word capitalised
+- **=UPPER(cell)**: All letters uppercase
+- **=LOWER(cell)**: All letters lowercase
+- **=SUBSTITUTE(cell)**: substitute a value in a cell by something else
+
+You can also combine these functions. For example: if you want to remove the leading and trailing spaces and capitalise each word in cell A1, you can use =PROPER(TRIM(A1)).
+
+## Text to columns
+You can use text to columns if you want to split up text in a single cell into multiple columns. 
+You can access the text to columns option by selecting the cells you want to split up, go to "Data", and then click on "Text To Columns".
+Then you have to select how you want to split up the cell by choosing a delimeter. This can by any of the default delimeters (in the video its a ";"), but you can also specify your custom delimeter. Then you click on next and you have the option to select a data-type for each column that is going to be created. You can also specify where you want your new data to be placed. If you then click finish, the data will be split in different columns, as is indicated by the video below.
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/tijsziere/tijsziere.github.io/main/images/04_DataCleaning/texttocolumns.gif">
+</p>

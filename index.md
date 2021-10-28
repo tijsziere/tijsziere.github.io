@@ -98,9 +98,43 @@ You can use conditional formatting in combination with Hightlight Duplicates, to
 If your dataset does not include a unique identifier, you can try to create one yourself. You do this by combining different cells into one unique value. For example you can combine "firstname", "lastname", "village" and "date of birth". The chance of somebody with the same name, that lives in the same village and has the same data of birth is very small. You can also combine this with the text functions for even better results.
 
 You can do this with the concatenate function:
-=CONCAT(text1, text2, text3, ...)
+**=CONCAT(text1, text2, text3, ...)**
 or
-=text1&text2&text3&...
+**=text1&text2&text3&...**
 
-Then you can use hightligt duplicates to identify the duplicates. 
+Then you can use hightlight duplicates to identify the duplicates. 
 
+## Anomalies
+
+### Numeric Outliers
+Check whether the range of values for each numeric question is as expected 
+See range of values in the filter drop down, by sorting your table or by using formulas like **MIN()** and **MAX()**.
+
+### Date Outliers
+Check whether the range of values for each date question is as expected 
+See range of values in the filter drop down, by sorting your table or by using formulas like **MIN()** and **MAX()**.
+
+## Combining datasets
+Sometimes you want to combine information from one dataset with information from another dataset. For example, if you did a first round of mobile data collection, but forgot to ask some questions. Then you go back into the field and ask the questions that you forgot to ask in the first round. After the second round of data collection, you want to combine the datasets into one. Below it is explained how to do this with the **=VLOOKUP()** function.
+
+### VLOOKUP for matching information with data.
+
+VLOOKUP is structured as follows:
+
+```
+=VLOOKUP (lookup_value, table_array, col_index_num, [range_lookup]
+lookup_value : value to look in 1st column
+table_array : range of cells to search
+col_index_num : column number
+[range_lookup] : FALSE 
+```
+
+In the example below, we retrieve the last name of a person in another table.
+
+![vlookup1](https://d33wubrfki0l68.cloudfront.net/91f031c2f47c5ee8f7ee98831ea51ef8f5de3a1f/733fc/tuto/v/5.gif)
+
+This is dynamic, so if you change the number in the other cell, the last name will also change:
+
+![vlookup2](https://d33wubrfki0l68.cloudfront.net/33de6b83c5e0e23be85617bcefbcd192a005ae26/7a180/tuto/v/4.gif)
+
+More information can be found (here)[https://www.excelfrog.com/vlookup]

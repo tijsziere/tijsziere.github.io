@@ -1,6 +1,6 @@
-# DRA CashIM Training
+# Data Cleaning
 
-Hi! This page helps you practice your skills to prepare for the DRA CashIM trainings.
+This page is to prepare yourself for the fourth session of the DRA CashIM Series. It focuses on data cleaning in Excel.
 
 ## Downloading data from kobo
 

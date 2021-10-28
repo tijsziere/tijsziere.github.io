@@ -8,7 +8,9 @@ To download data from kobotoolbox, please login at https://kobonew.ifrc.org and 
 
 ![Downloading data from kobo](https://github.com/tijsziere/tijsziere.github.io/blob/main/images/04_DataCleaning/DownloadKoBoData.gif)
 
-<img src="https://github.com/tijsziere/tijsziere.github.io/blob/main/images/04_DataCleaning/DownloadKoBoData.gif" width="800" align="center">
+<p align="center">
+<img src="https://github.com/tijsziere/tijsziere.github.io/blob/main/images/04_DataCleaning/DownloadKoBoData.gif" width="800">
+</p>
 
 ## Data Cleaning in Excel
 

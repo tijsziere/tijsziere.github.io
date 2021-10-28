@@ -78,7 +78,7 @@ You can also combine these functions. For example: if you want to remove the lea
 ## Text to columns
 You can use text to columns if you want to split up text in a single cell into multiple columns. 
 You can access the text to columns option by selecting the cells you want to split up, go to "Data", and then click on "Text To Columns".
-Then you have to select how you want to split up the cell by choosing a delimeter. This can by any of the default delimeters (in the video its a ";"), but you can also specify your custom delimeter. Then you click on next and you have the option to select a data-type for each column that is going to be created. You can also specify where you want your new data to be placed. If you then click finish, the data will be split in different columns, as is indicated by the video below.
+Then you have to select how you want to split up the cell, most often this is by a delimeter. Click next and specify the delimeter. This can by any of the default delimeters (in the video its a ";"), but you can also specify your custom delimeter. Then you click on next and you have the option to select a data-type for each column that is going to be created. You can also specify where you want your new data to be placed. If you then click finish, the data will be split in different columns, as is indicated by the video below.
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/tijsziere/tijsziere.github.io/main/images/04_DataCleaning/texttocolumns.gif">

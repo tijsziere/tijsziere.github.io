@@ -54,7 +54,7 @@ To add multiple conditions, add your first one, then click on the "+ Add a condi
 Cascading select questions are sets of questions whose options depend on the response to a previous question. For example, your form may first ask the region where a respondent is from, and then in the next question list only the districts in that region and then follow up with only the villages of that district.
 
 ### Create your cascading select in Excel
-Download [this template](https://raw.githubusercontent.com/tijsziere/tijsziere.github.io/main/images/05_AdvancedMDC/CascadingSelect.xlsx) and open in Excel.If you want, you can change the values to match your situation.
+Download [this template](https://raw.githubusercontent.com/tijsziere/tijsziere.github.io/main/images/05_AdvancedMDC/CascadingSelect.xlsx) and open in Excel. If you want, you can change the values to match your situation.
 
 ### Import cascading select into kobotoolbox
 Then import the cascading select question into kobotoolbox by clicking the cascading select icon on the top left and copy and paste the data from excel in the popup window that appears. This is also illustrated in the video below:

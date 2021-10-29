@@ -20,7 +20,7 @@ There are multiple ways to navigate excel and select parts of your worksheet. Th
 <img src="https://raw.githubusercontent.com/tijsziere/tijsziere.github.io/main/images/04_DataCleaning/ExcelNavigationMouse.gif">
 </p>
 
-You can also use the keyboard-only. Then you can select columns by pressing control+space and rows by pressing shitf+space.
+You can also use the keyboard-only. Then you can select columns by pressing control+space and rows by pressing shift+space. If you then hold shift, you can select multiple columns/rows by using the arrow keys.
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/tijsziere/tijsziere.github.io/main/images/04_DataCleaning/ExcelNavigationKeyboard.gif">

@@ -40,11 +40,9 @@ Q3: Which grade are you in?
 You would want to display the third question only if the respondent answers ‘Yes’ to the first question.
 ```
 
-These conditions can be added to each question by clicking on Settings inside the question card (top right of each question), then select "Skip Logic" on the left. Then click on "+ Add a condition" and fill this in. This process is illustrated below:
+These conditions can be added to each question by clicking on Settings inside the question card (top right of each question), then select "Skip Logic" on the left. Then click on "+ Add a condition" and fill this in. This process is illustrated below. To add multiple conditions, add your first one, then click on the "+ Add a condition" button. When using two or more conditions, be sure to choose between the two options: whether the question should match **any** (at least one) of these criteria, or **all** of them.
 
 ![SkipLogic](https://raw.githubusercontent.com/tijsziere/tijsziere.github.io/main/images/05_AdvancedMDC/condition.gif)
-
-To add multiple conditions, add your first one, then click on the "+ Add a condition" button. When using two or more conditions, be sure to choose between the two options: whether the question should match **any** (at least one) of these criteria, or **all** of them.
 
 [more information on skip logic here](https://support.kobotoolbox.org/skip_logic.html?highlight=skip%20logic)
 

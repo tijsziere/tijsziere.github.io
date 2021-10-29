@@ -11,7 +11,7 @@ We will learn:
 - Grouping
 - Skip logic (conditional questions)
 - Cascading select
-- Restrain answers
+- Constrain answers (Validation Criteria)
 - Calculations
 - Layout
 
@@ -61,4 +61,36 @@ Then import the cascading select question into kobotoolbox by clicking the casca
 
 [more information on cascading select here](https://support.kobotoolbox.org/cascading_select.html?highlight=cascading%20select)
 
-## Restrain answers
+## Constrain answers (Validation criteria)
+This feature allows you to avoid accidental or invalid answers, especially in numeric questions (integer or decimal response types). However, validation can be used on any question. Validation criteria are also sometimes referred to as constraints.
+
+You can add validation criteria by going to a questions settings and then click on "Validation Criteria". In the example below it is shown how we restrict the age to numbers between 0 and 130.
+
+![Validation](https://raw.githubusercontent.com/tijsziere/tijsziere.github.io/main/images/05_AdvancedMDC/validation.gif)
+
+
+## Calculations
+Some advanced forms may require an internal calculation to take place as part of the form (rather than afterwards during the analysis). This can be done by adding a Calculation and writing the mathematical expression into the question label field.
+
+In the example below, we will ask how many girls and how many boys live in the household, then we add a calculation to add those two. We use that to confirm the response of the beneficiary.
+
+1. We start by adding the first two questions, and giving them a better name (via question settings and then changing the "Data Column Name") So that we can better reference them later.
+	- First question (number type): "How many girls under 18 live in your household?" and change the name to: girls
+	- Second question (number type): "How many boys under 18 live in your household?" and change the name to: boys
+2. Then we add the calculation by typing ${girls}+${boys} in a new question and then select calculation as the question type and change the name to: total_children
+3. Then you can use the outcome of this calculation in a note question type. You do this by typing "You said you have ${total_children} children, is that correct?" and select note as the question type.
+
+The video below illustrates this example
+
+![calculation](https://support.kobotoolbox.org/_images/calculation.gif)
+
+## Layout
+Kobo webforms can be customized in the way your questions are presented. There are two alternative styles that can be selected and even combined: Multiple Pages and Grid Theme.
+
+***Multiple Pages*** mode displays one question at a time per screen, or a group of questions set to display on the same screen. This is the same way KoBoCollect works.
+
+***Grid Theme*** is an alternative display of questions meant to be more compact and more like paper forms where space is often a major concern. theme-grid allows displaying multiple questions per row and flexibly adapts in case of skip logic making a new question appear or disappear. To display multiple questions in a row they need to be part of a group, which by default shows up to four questions next to each other. This theme can be customized by defining the number of questions to be included in each row through the appearance field of each question’s settings. For more details see this post.
+
+It is also possible to use both Multiple Pages and Grid Theme together. You can set these styles through the KoBoToolbox form-builder user interface:
+
+![styles](https://support.kobotoolbox.org/_images/multiple_grid.gif)

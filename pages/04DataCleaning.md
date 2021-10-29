@@ -137,7 +137,7 @@ This is dynamic, so if you change the number in the other cell, the last name wi
 
 ![vlookup2](https://d33wubrfki0l68.cloudfront.net/33de6b83c5e0e23be85617bcefbcd192a005ae26/7a180/tuto/v/4.gif)
 
-More information can be found (here)[https://www.excelfrog.com/vlookup]
+More information can be found [here](https://www.excelfrog.com/vlookup)
 
 
 [back to overview](https://tijsziere.github.io/)

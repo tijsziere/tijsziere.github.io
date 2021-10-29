@@ -93,4 +93,4 @@ Kobo webforms can be customized in the way your questions are presented. There a
 
 It is also possible to use both Multiple Pages and Grid Theme together. You can set these styles through the KoBoToolbox form-builder user interface:
 
-![styles](https://support.kobotoolbox.org/_images/multiple_grid.gif)
+![styles](https://raw.githubusercontent.com/tijsziere/tijsziere.github.io/main/images/05_AdvancedMDC/style.gif)

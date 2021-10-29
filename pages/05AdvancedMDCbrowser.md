@@ -42,7 +42,7 @@ You would want to display the third question only if the respondent answers ‘Y
 
 These conditions can be added to each question by clicking on Settings inside the question card (top right of each question), then select "Skip Logic" on the left. Then click on "+ Add a condition" and fill this in. This process is illustrated below:
 
-![Skip Logic](https://support.kobotoolbox.org/_images/condition.gif)
+![SkipLogic](https://support.kobotoolbox.org/_images/condition.gif)
 
 To add multiple conditions, add your first one, then click on the "+ Add a condition" button. When using two or more conditions, be sure to choose between the two options: whether the question should match **any** (at least one) of these criteria, or **all** of them.
 

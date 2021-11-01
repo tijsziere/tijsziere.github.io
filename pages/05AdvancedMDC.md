@@ -3,7 +3,7 @@
 This page is to prepare yourself for the fifth session of the DRA CashIM Series. It focuses advanced formbuilding. It offers two flavours: advanced formbuilding in the browser with kobotoolbox and advanced formbuilding with XlsForms.
 
 - [advanced formbuilding in the browser](#advanced-formbuilding-in-the-browser)
-- advanced formbuilding with XlsForms (under construction)
+- [advanced formbuilding with XlsForm](#advanced-formbuilding-with-xlsform)
 
 [Back to overview](https://tijsziere.github.io/)
 
@@ -103,3 +103,86 @@ Kobo webforms can be customized in the way your questions are presented. There a
 It is also possible to use both Multiple Pages and Grid Theme together. You can set these styles through the KoBoToolbox form-builder user interface:
 
 ![styles](https://raw.githubusercontent.com/tijsziere/tijsziere.github.io/main/images/05_AdvancedMDC/style.gif)
+
+# Advanced Formbuilding with XLSForm
+
+In this section we will learn how to create a form using xlsform. All the information abou XLSForm can be found [here](https://xlsform.org/en/)
+
+## Basic form creation
+
+XLSForm file has three sheets
+- survey: questionnaire overall structure. Full list of questions and their appearance. 
+- choices: answer choices for the multiple choice questions in the survey sheet
+- settings: some metadata about the form (not required)
+
+![Form Creation](https://github.com/tijsziere/tijsziere.github.io/blob/main/images/05_AdvancedMDC/1_1_basic_form_creation.gif)
+
+## XLSForm validation
+
+It is possible to validate your XLSForm in this [link](https://getodk.org/xlsform/). Following the steps as per the image below.
+
+![Form Validation](https://github.com/tijsziere/tijsziere.github.io/blob/main/images/05_AdvancedMDC/1_2_validate_xlsform.gif)
+
+## Creating a Kobo project with XLSForm
+
+We can create a Kobo project uploading a XLSForm:
+
+![Project creation](https://github.com/tijsziere/tijsziere.github.io/blob/main/images/05_AdvancedMDC/2_xlsform_kobo_creation.gif)
+
+## Download the XLSForm from a Kobo project
+
+We can also download the XLSForm from any Kobo project, regardless if it was created with XLSForm or with the FormBuilder:
+
+![Downloading XLSForm](https://github.com/tijsziere/tijsziere.github.io/blob/main/images/05_AdvancedMDC/3_xlsform_kobo_download.gif)
+
+## Update a Kobo project with XLSForm
+
+Any Kobo project can also be updated using XLSForm:
+
+![Updating a XLSForm](https://github.com/tijsziere/tijsziere.github.io/blob/main/images/05_AdvancedMDC/4_xlsform_kobo_update.gif)
+
+## Creating groups
+
+To add a group to your form you need to add two rows.
+- Begin group. Also enter a name and label
+- End group. Doesn’t require name and label because hidden in the form
+
+![Create a group](https://github.com/tijsziere/tijsziere.github.io/blob/main/images/05_AdvancedMDC/5_xlsform_create_group.gif)
+
+## Adding a language
+
+You can add multiple languages by naming your label and hint columns as follows:
+- label::language1 (code), label::language2 (code), etc.
+
+![Add a language](https://github.com/tijsziere/tijsziere.github.io/blob/main/images/05_AdvancedMDC/6_xlsform_add_language.gif)
+
+## Changing the appearance
+
+You can add a column appearance to change the way the questions are displayed in the form.
+
+![Changing appearance](https://github.com/tijsziere/tijsziere.github.io/blob/main/images/05_AdvancedMDC/7_xlsform_appearance.gif)
+
+## Constraint answers (Validation criteria)
+
+To ensure data quality, it is a good practice to add constraints to the data fields in your form. This prevent you from receiving impossible answers.
+
+![Constraint](https://github.com/tijsziere/tijsziere.github.io/blob/main/images/05_AdvancedMDC/8_xlsform_constraint)
+
+## Skip logic for conditional questions (Relevant)
+
+The relevant column is used to skip a question or make an additional question appear based on the response to a previous question. The referenced question (variable) is written between  ${ and } as per the image below:
+
+![Relevant](https://github.com/tijsziere/tijsziere.github.io/blob/main/images/05_AdvancedMDC/9_xlsform_relevant.gif)
+
+## Mandatory questions (Required)
+
+To make a field mandatory add the column required and enter yes or no (true or false will also work).
+Marking a questions as required means the user will not be able to move on to the next question or submit the form without entering an answer for that question.
+
+![Required](https://github.com/tijsziere/tijsziere.github.io/blob/main/images/05_AdvancedMDC/10_xlsform_required.gif)
+
+## Calculations
+
+Your questionnaire can perform calculations using the values of preceding. As per any formula, the referenced question (variable) is written between ${ and }
+
+![Calculate](https://github.com/tijsziere/tijsziere.github.io/blob/main/images/05_AdvancedMDC/11_xlsform_calculate.gif)
